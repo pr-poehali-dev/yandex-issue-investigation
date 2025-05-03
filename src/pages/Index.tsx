@@ -9,19 +9,39 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-slate-50 py-8 px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
-        <header className="mb-8 text-center">
-          <div className="flex justify-center items-center mb-3">
-            <Button 
-              variant="link" 
-              className="text-blue-600 hover:text-blue-800 font-medium flex items-center"
-              onClick={() => window.open("http://Elektrikkolpino.bos.ru", "_blank")}
-            >
-              <Icon name="ExternalLink" className="mr-2" size={16} />
-              Elektrikkolpino.bos.ru
-            </Button>
+        <header className="mb-8">
+          <div className="text-center bg-blue-50 p-4 rounded-lg shadow-sm mb-6">
+            <h2 className="text-xl font-semibold text-blue-800 mb-2 flex items-center justify-center">
+              <Icon name="Phone" className="mr-2 text-green-600" size={20} />
+              Вызвать электрика в Колпино можно по телефону
+            </h2>
+            <a href="tel:+79500308830" className="text-xl font-bold text-blue-700 hover:text-blue-900 block mb-3">
+              +7 (950) 030-88-30
+            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-2">
+              <p className="text-gray-700 mb-2 sm:mb-0">Наши сайты:</p>
+              <div className="flex flex-wrap justify-center gap-3">
+                <Button 
+                  variant="link" 
+                  className="text-blue-600 hover:text-blue-800 font-medium flex items-center"
+                  onClick={() => window.open("http://elektrikkolpino.bos.ru", "_blank")}
+                >
+                  <Icon name="ExternalLink" className="mr-1" size={14} />
+                  elektrikkolpino.bos.ru
+                </Button>
+                <Button 
+                  variant="link" 
+                  className="text-blue-600 hover:text-blue-800 font-medium flex items-center"
+                  onClick={() => window.open("https://elektrik-kolpino.narod.ru", "_blank")}
+                >
+                  <Icon name="ExternalLink" className="mr-1" size={14} />
+                  elektrik-kolpino.narod.ru
+                </Button>
+              </div>
+            </div>
           </div>
-          <h1 className="text-4xl font-bold mb-3 text-red-600">Почему Яндекс — мусорная поисковая выдача</h1>
-          <p className="text-lg text-gray-600">Анализ проблем поисковой системы Яндекс</p>
+          <h1 className="text-4xl font-bold mb-3 text-red-600 text-center">Почему Яндекс — мусорная поисковая выдача</h1>
+          <p className="text-lg text-gray-600 text-center">Анализ проблем поисковой системы Яндекс</p>
         </header>
 
         <div className="space-y-8">
