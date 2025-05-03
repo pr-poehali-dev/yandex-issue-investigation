@@ -3,12 +3,23 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-slate-50 py-8 px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
         <header className="mb-8 text-center">
+          <div className="flex justify-center items-center mb-3">
+            <Button 
+              variant="link" 
+              className="text-blue-600 hover:text-blue-800 font-medium flex items-center"
+              onClick={() => window.open("http://Elektrikkolpino.bos.ru", "_blank")}
+            >
+              <Icon name="ExternalLink" className="mr-2" size={16} />
+              Elektrikkolpino.bos.ru
+            </Button>
+          </div>
           <h1 className="text-4xl font-bold mb-3 text-red-600">Почему Яндекс — мусорная поисковая выдача</h1>
           <p className="text-lg text-gray-600">Анализ проблем поисковой системы Яндекс</p>
         </header>
